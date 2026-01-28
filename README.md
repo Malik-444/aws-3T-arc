@@ -1,4 +1,5 @@
 # FastAPI 3-Tier Architecture
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/568256d4-41da-4d2c-be73-76ebd698e66b" />
 
 ## Overview
 
