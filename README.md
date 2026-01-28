@@ -1,9 +1,15 @@
-# FastAPI 3-Tier Architecture
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/568256d4-41da-4d2c-be73-76ebd698e66b" />
+# 3-Tier Architecture
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/eb743f19-3b24-4e45-a041-ad7d22cffed2" />
+
 
 ## Overview
 
-The FastAPI application allows creating and listing todo items via JSON endpoints.
+This project demonstrates a production-style 3-tier web application architecture on AWS, designed using cloud best practices for network isolation, security, and scalability.
+
+The application is built with FastAPI and deployed on an EC2 instance in a private subnet, fronted by an Application Load Balancer (ALB) in a public subnet. A PostgreSQL database hosted on Amazon RDS resides in private subnets and is securely accessed using security group–to–security group rules.
+
+Outbound internet access for private resources is enabled via a NAT Gateway, and AWS Systems Manager (SSM) is used for secure, keyless instance access—eliminating the need for a bastion host or public SSH access.
 
 ---
 
