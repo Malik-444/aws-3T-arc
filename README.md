@@ -82,7 +82,7 @@ python3 -m uvicorn main:app --host 0.0.0.0 --port 8000
 ```bash
 # Health check
 curl http://<ALB_DNS>/
-<img width="1369" height="234" alt="Screenshot from 2026-01-27 22-12-43" src="https://github.com/user-attachments/assets/91740da3-838f-44a8-8c89-dffc7031ffbc" />
+
 
 # Create todo
 curl -X POST http://<ALB_DNS>/todos -H "Content-Type: application/json" -d '{"title":"Learn AWS"}'
@@ -90,9 +90,12 @@ curl -X POST http://<ALB_DNS>/todos -H "Content-Type: application/json" -d '{"ti
 
 # List todos
 curl http://<ALB_DNS>/todos
-<img width="915" height="490" alt="Screenshot from 2026-01-28 00-05-26" src="https://github.com/user-attachments/assets/d480fc7f-6d71-4367-b62d-63df311bf481" />
+
 
 ```
+<img width="1369" height="234" alt="Screenshot from 2026-01-27 22-12-43" src="https://github.com/user-attachments/assets/946fe388-548c-408a-a692-cf6003041c02" />
+
+<img width="915" height="490" alt="Screenshot from 2026-01-28 00-05-26" src="https://github.com/user-attachments/assets/2a16ae46-0846-48a8-8bbd-088c58708dbb" />
 
 ---
 
