@@ -1,4 +1,4 @@
-
+#This work without RDS and uses memomry to store 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
