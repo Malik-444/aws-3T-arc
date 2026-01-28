@@ -11,6 +11,8 @@ The application is built with FastAPI and deployed on an EC2 instance in a priva
 
 Outbound internet access for private resources is enabled via a NAT Gateway, and AWS Systems Manager (SSM) is used for secure, keyless instance access—eliminating the need for a bastion host or public SSH access.
 
+Infrastructure is fully reproducible using Terraform for ease of replication and also to save on have resources fully up 
+
 ---
 
 ## Architecture
