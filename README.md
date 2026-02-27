@@ -1,6 +1,6 @@
 <h1>Secure 3-Tier AWS Architecture (Terraform + FastAPI)</h1>
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/eb743f19-3b24-4e45-a041-ad7d22cffed2" />
-<h2>🚨 Problem</h2>
+<h2> Problem</h2>
 <p>
 Many small deployments expose EC2 instances and databases directly to the internet, rely on manual provisioning, and use SSH-based access. This often leads to:
 </p>
@@ -27,7 +27,7 @@ Production systems require secure network isolation, controlled access paths, re
   <li>Validate connectivity through structured troubleshooting</li>
 </ul>
 
-<h2>🏗 Architecture Overview</h2>
+<h2> Architecture Overview</h2>
 
 <pre>
 Client
@@ -52,7 +52,7 @@ Client
   <li>AWS Systems Manager (SSM) provides secure, keyless instance access</li>
 </ul>
 
-<h2>🔐 Security & Access Design</h2>
+<h2> Security & Access Design</h2>
 <ul>
   <li>No public SSH access</li>
   <li>No public database endpoint</li>
@@ -61,7 +61,7 @@ Client
   <li>Controlled ingress and egress rules</li>
 </ul>
 
-<h2>⚙️ Infrastructure as Code</h2>
+<h2> Infrastructure as Code</h2>
 <p>
 All infrastructure is provisioned using Terraform, enabling:
 </p>
@@ -72,7 +72,7 @@ All infrastructure is provisioned using Terraform, enabling:
   <li>Version-controlled infrastructure changes</li>
 </ul>
 
-<h2>🔧 Operational Validation & Troubleshooting</h2>
+<h2> Operational Validation & Troubleshooting</h2>
 <ul>
   <li>Verified ALB health check behavior</li>
   <li>Troubleshot security group misconfigurations</li>
@@ -81,7 +81,7 @@ All infrastructure is provisioned using Terraform, enabling:
   <li>Tested end-to-end request flow from client to database</li>
 </ul>
 
-<h2>⚙️ Application Layer</h2>
+<h2> Application Layer</h2>
 <ul>
   <li>FastAPI backend deployed on EC2</li>
   <li>PostgreSQL database hosted on Amazon RDS</li>
@@ -96,7 +96,7 @@ All infrastructure is provisioned using Terraform, enabling:
   <li><code>GET /todos</code> → List all todos</li>
 </ul>
 
-<h2>🚀 Future Improvements</h2>
+<h2> Future Improvements</h2>
 <ul>
   <li>Auto Scaling Group for EC2 instances</li>
   <li>HTTPS termination with ACM</li>
@@ -105,7 +105,7 @@ All infrastructure is provisioned using Terraform, enabling:
   <li>Blue/green deployment strategy</li>
 </ul>
 
-<h2>📈 Why This Project Matters</h2>
+<h2> Why This Project Matters</h2>
 <ul>
   <li>Cloud architecture design principles</li>
   <li>Secure infrastructure patterns</li>
