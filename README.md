@@ -15,7 +15,7 @@ Many small deployments expose EC2 instances and databases directly to the intern
 Production systems require secure network isolation, controlled access paths, reproducible infrastructure, and observable traffic flow.
 </p>
 
-<h2>🛠 Solution</h2>
+<h2>Solution</h2>
 <p>This project implements a production-style 3-tier AWS architecture designed using cloud best practices to address those risks.</p>
 
 <h3>Design Goals</h3>
@@ -96,23 +96,7 @@ All infrastructure is provisioned using Terraform, enabling:
   <li><code>GET /todos</code> → List all todos</li>
 </ul>
 
-<h2> Future Improvements</h2>
-<ul>
-  <li>Auto Scaling Group for EC2 instances</li>
-  <li>HTTPS termination with ACM</li>
-  <li>CI/CD pipeline integration</li>
-  <li>CloudWatch monitoring and alarms</li>
-  <li>Blue/green deployment strategy</li>
-</ul>
 
-<h2> Why This Project Matters</h2>
-<ul>
-  <li>Cloud architecture design principles</li>
-  <li>Secure infrastructure patterns</li>
-  <li>Infrastructure automation using Terraform</li>
-  <li>Operational debugging and connectivity validation</li>
-  <li>Production-style thinking rather than tutorial deployment</li>
-</ul>
 
 
 
